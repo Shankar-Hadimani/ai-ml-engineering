@@ -1,0 +1,8 @@
+--- commands to be used for execution.
+gcloud config set project <project Name>    : ( in google cloud)
+
+---(execute flask app)
+python3 complaints_flask.py  
+
+--- post text for prediction
+curl http://localhost:5000/score -d "{\"text\": \"To help our students and their families I have waived interest on all student loans held by federal government agencies and that will be until further notice Trump said during a Rose Garden address where he declared a national emergency. Thats a big thing for a lot of students that are left in the middle right now. Many of those schools have been closed\"}"
